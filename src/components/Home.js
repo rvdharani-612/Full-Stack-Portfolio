@@ -1,27 +1,31 @@
 function Home() {
 
-    return (
+  const goToProjects = () => {
 
-        <section id="home">
+    const section = document.getElementById("projects");
 
-            <h1>
-                Hi, I'm Dharani
-            </h1>
+    section.scrollIntoView({
+      behavior: "smooth"
+    });
 
-            <p>
-                Full Stack Developer |
-                AI Enthusiast |
-                Competitive Programmer
-            </p>
+  };
 
-            <button>
-                View Projects
-            </button>
+  return (
+    <div>
 
-        </section>
+      <h1>Hi, I'm Dharani</h1>
 
-    );
+      <p>
+        Full Stack Developer | AI Enthusiast |
+        Competitive Programmer
+      </p>
 
+      <button onClick={goToProjects}>
+        View Projects
+      </button>
+
+    </div>
+  );
 }
 
 export default Home;
