@@ -13,7 +13,7 @@ function Projects() {
 
     useEffect(() => {
 
-        axios.get("http://localhost:5000/projects")
+        axios.get("https://full-stack-portfolio-0f05.onrender.com/projects")
 
         .then((response) => {
 

@@ -33,7 +33,7 @@ function AddProject() {
         try {
 
             await axios.post(
-                "http://localhost:5000/add",
+                "https://full-stack-portfolio-0f05.onrender.com/add",
                 newProject
             );
 
